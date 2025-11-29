@@ -1,3 +1,35 @@
 main svg {
     width: 8vw;
 }
+
+.battery {
+    animation: 3s linear infinite alternate battery;
+}
+
+@keyframes rotation_animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        color: red;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    animation: rotation_animation 5s infinite;
+}
+
+@keyframes battery {
+    from {
+        transform: translateX(1vw);
+    }
+    to {
+        transform: translate(30vw);
+    }
+}
